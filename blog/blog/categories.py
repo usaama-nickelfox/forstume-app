@@ -2,7 +2,7 @@ import json
 
 
 def lambda_handler(event, context):
-    """list of blog API"""
+    """list of product API"""
     blogs = [
         'Personal',
         'Corporate',

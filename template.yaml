@@ -11,12 +11,31 @@ Globals:
     Timeout: 3
 
 Resources:
+#  DomainName:
+#    Type: AWS::ApiGateway::DomainName
+#    Properties:
+#      CertificateArn: arn:aws:acm:us-east-1:146352104846:certificate/73e9bc86-77cd-45d2-b356-2822b69e57f0
+#      DomainName: dev.forstume-appcloud.ml
+#      Tags:
+#        - Key: stage
+#          Value: dev-stage
+
   BlogNestedStack:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: blog/template.yaml
+      TemplateURL: product/template.yaml
 
   AuthenticationNestedStack:
     Type: AWS::CloudFormation::Stack
     Properties:
       TemplateURL: authentication/template.yaml
+
+  ProductNestedStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: product/template.yaml
+#      Parameters:
+#        DomainName:
+#          Type: String
+#          Default: !Ref DomainName
+#          Description: 'Domain name'

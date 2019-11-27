@@ -2,7 +2,7 @@ import json
 
 
 def lambda_handler(event, context):
-    """list of blog API"""
+    """list of product API"""
     blogs = [{
         'title': 'BETTER UTILITY THAN A TRUCK WITH MORE PERFORMANCE THAN A SPORTS CAR',
         'description': 'Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.'
