@@ -1,2 +1,3 @@
 # forstume-app
-Nested serverless microservice architecture for large scale application.
+Nested stack serverless microservice architecture for large project.
+
