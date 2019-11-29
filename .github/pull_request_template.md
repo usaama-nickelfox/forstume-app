@@ -1,62 +1,41 @@
-<--
-## Contribution Checklist
-  
-  - Name the pull request in the form "[component] Title of the pull request". Skip *component* if you are unsure about which is the best component. E.g. `[docs] Fix typo in produce method`.
+# Use Cases
 
-  - Fill out the template below to describe the changes contributed by the pull request. That will give reviewers the context they need to do the review.
-  
-  - Make sure that the change passes the CI checks.
+## Description
 
-  - Each pull request should address only one issue, not mix up code from multiple issues.
-  
-  - Each commit in the pull request has a meaningful commit message
+Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-  - Once all items of the checklist are addressed, remove the above text and this checklist, leaving only the filled out template below.
+**Summary**: <write your summary here.>
+**Area**: <List all the files being changed.>
+**Changes**: <Description for your changes in detail>
 
+## Type of change
 
-**(The sections below can be removed for hotfixes of typos)**
--->
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] This change requires a documentation update
 
-## Motivation
+## How Has This Been Tested?
 
-*Explain here the context, and why you're making that change. What is the problem you're trying to solve.*
+Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
 
-## Modifications
+- [ ] Test A
+- [ ] Test B
 
-*Describe the modifications you've done.*
+**Test Configuration**:
+**Package**:
 
-## Verifying this change
+# Checklist:
 
-*(Please pick either of the following options)*
-
-This change is a trivial rework / code cleanup without any test coverage.
-
-*(or)*
-
-This change is already covered by existing tests, such as *(please describe tests)*.
-
-*(or)*
-
-This change added tests and can be verified as follows:
-
-*(example:)*
-  - *Added integration tests for end-to-end deployment with large payloads (10MB)*
-  - *Extended integration test for recovery after broker failure*
-
-## Does this pull request potentially affect one of the following parts:
-
-*If `yes` was chosen, please highlight the changes*
-
-  - Dependencies (does it add or upgrade a dependency): (yes / no)
-  - The public API: (yes / no)
-  - The schema: (yes / no / don't know)
-  - The default values of configurations: (yes / no)
-  - The wire protocol: (yes / no)
-  - The rest endpoints: (yes / no)
-  - The admin cli options: (yes / no)
-  - Anything that affects deployment: (yes / no / don't know)
-
-## Documentation
-
-  - Does this pull request introduce a new feature? (yes / no)
-  - If yes, how is the feature documented? (not applicable / docs / JavaDocs / not documented)
+- [ ] My code follows the style guidelines of this project (PEP8 and Hack)
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally with my changes
+- [ ] Any dependent changes have been merged and published in downstream modules
+- [ ] Run code formatters if applicable
+- [ ] Attach this checklist link as a comment in the JIRA issue
+- [ ] Move the issue from In Progress to In Review
+- [ ] Assign this task to reviewer
