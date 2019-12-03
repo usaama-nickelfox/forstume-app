@@ -1,0 +1,18 @@
+Authentication:
+  LoginFeature:
+    - email: info@aptihealth.com
+      password: password
+      expected: 401
+    - email: gautam@nickelfox.com
+      password: abs@12345
+      expected: 401
+    - email: info@forstume-app.com
+      password: password
+      expected: 200
+  StrCompareFeature:
+    - str1: aptihealth
+      str2: aptihealth
+      expected: True
+    - str1: apti
+      str2: aptihealth
+      expected: False
